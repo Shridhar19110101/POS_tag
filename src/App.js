@@ -9,14 +9,14 @@ import { useState, useEffect } from 'react';
 
 function err(){
   return(
-    <h1>model is not ready</h1>
+    <h1>model is not up and running. plaese add correct api and start it in hugginface. Then reload the page and retry</h1>
   )
 }
   
 
 
 function App() {
-
+  try{
   const [text, textSet] = useState("");
   const [show, setShow] = useState(false);
   
@@ -64,19 +64,9 @@ const listItems = data.map(
               </div>
               
           </ul>
-        )
-              
-      
+        ) 
     }
   )
-
-
-  
-
-
-
-
-  
 
 
   return (
@@ -95,7 +85,6 @@ const listItems = data.map(
         
         {listItems}
         
-
       </div>
       
 
@@ -103,5 +92,9 @@ const listItems = data.map(
   );
 }
 
+catch(error){
+  err()
+}
+}
 
 export default App;

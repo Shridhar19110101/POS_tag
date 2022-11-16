@@ -7,16 +7,12 @@ import Leftbox from './Components/Leftbox';
 
 import { useState, useEffect } from 'react';
 
-function err(){
-  return(
-    <h1>model is not up and running. plaese add correct api and start it in hugginface. Then reload the page and retry</h1>
-  )
-}
+
   
 
 
 function App() {
-  try{
+  
   const [text, textSet] = useState("");
   const [show, setShow] = useState(false);
   
@@ -27,7 +23,7 @@ function App() {
   const writeText = (event)=>{
     textSet(event.target.value);
   }
-  let tags;
+  
   
  
   
@@ -89,11 +85,9 @@ const listItems = data.map(
 
     </div>
   );
-}
 
-catch(error){
-  err();
-}
+
+
 }
 
 export default App;

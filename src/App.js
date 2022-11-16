@@ -81,8 +81,7 @@ const listItems = data.map(
 
       {/* Generate sentence */}
       <div className='generatedBox'>
-        <h3>Individual POS Tag</h3>
-        
+        <h3>Individual POS Tag</h3> 
         {listItems}
         
       </div>
@@ -93,7 +92,7 @@ const listItems = data.map(
 }
 
 catch(error){
-  err()
+  err();
 }
 }
 

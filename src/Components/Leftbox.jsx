@@ -8,6 +8,10 @@ function Leftbox() {
         color: "#fad",
     },
     {
+        text: "PROPN(proper noun)",
+        color: "#3EE419",
+    },
+    {
         text: "VERB (verbs)",
         color: "green",
     },
@@ -36,20 +40,20 @@ function Leftbox() {
         color: "#92B050",
     },
     {
-        text: "PRT (particles)",
-        color: "#3EE419",
-    },
-    {
         text: " PART",
         color: "#19E4AE",
     },
     {
         text: "PRON_WH",
-        color: "#2ABBB2",
+        color: "#8A12D3",
     },
     {
-        text: "'.' (punctuation)",
+        text: "PART_NEG",
         color: "#2AA9BB",
+    },
+    {
+        text: "NUM",
+        color: "#C6DA2D",
     },
     {
         text: "X (a catch-all)",
